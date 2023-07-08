@@ -27,11 +27,11 @@ trainer.train(dialogues)
 # Define as regras de diálogo para o NLTK
 rules = [
     (r'Oi|Olá|E aí', ['Olá!', 'E aí?', 'Oi!']),
-    (r'Qual é seu nome', ['Meu nome é Solubot', 'Eu sou o Solubot seu amiguinho', 'Sou o Solubot, prazer!']),
+    (r'Qual é seu nome', ['Meu nome é Chatter', 'Eu sou o Chatter seu amiguinho', 'Sou o Chatter, prazer!']),
     (r'Qual é a previsão do tempo para amanhã', ['Amanhã deve ser quente e ensolarado!', 'Amanhã pode ser quente e abafado!', 'Amanhã vai ser um dia quente!']),
     (r'(.*)clima(.*)', ['O clima parece estar quente e abafado nos próximos dias!', 'O clima está quente e úmido!', 'O clima está quente e seco!']),
     (r'bye|tchau|até logo|até a próxima', ['Até a próxima!', 'Tchau!', 'Até logo!']),
-    (r'(.*)boleto(.*)|(.*)pagamento(.*)', ['Ok vou encaminhar a conversa para o setor financeiro!', 'aGUARDE, VOU TRANSFERIR PARA O FINANCEIRO!', 'Ok, você solicitou informações sobre boletos, ou encaminhar para o financeiro!']),
+    (r'(.*)boleto(.*)|(.*)pagamento(.*)', ['Ok vou encaminhar a conversa para o setor financeiro!', 'AGUARDE, VOU TRANSFERIR PARA O FINANCEIRO!', 'Ok, você solicitou informações sobre boletos, ou encaminhar para o financeiro!']),
 ]
 # Cria o chatbot para o NLTK
 nltk_chatbot = Chat(rules, reflections)

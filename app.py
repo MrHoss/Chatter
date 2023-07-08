@@ -7,7 +7,7 @@ from gtts import gTTS
 import os
 
 # Cria o chatbot
-chatbot = ChatBot('Solubot')
+chatbot = ChatBot('Chatter')
 r = sr.Recognizer()
 mic = sr.Microphone()
 
